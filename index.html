@@ -178,6 +178,13 @@ footer .miolo > span { min-width: 0; max-width: 62ch; }
 .botao:hover { filter: brightness(1.05); }
 .passeio ol { margin: 0; padding-left: 20px; color: color-mix(in srgb, var(--reboco) 80%, var(--tinta)); display: grid; gap: 8px; font-size: 0.93rem; }
 @media (max-width: 820px) { .passeio .miolo { grid-template-columns: minmax(0, 1fr); } }
+/* P52 (28/10/2026): localizacao real (satelite marcado no QGIS) */
+.local { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+.local .prancha img { display: block; }
+.local .lado p { margin: 0 0 16px; }
+.local .botao { margin-top: 6px; }
+.local-fotos { display: grid; gap: 16px; }
+@media (max-width: 820px) { .local { grid-template-columns: minmax(0, 1fr); } }
 </style>
 </head>
 <body>
@@ -186,7 +193,7 @@ footer .miolo > span { min-width: 0; max-width: 62ch; }
   <div class="miolo">
     <a class="marca" href="#inicio"><img class="infiniti-claro" src="img/logo-infiniti.png" alt="INFINITI Engenharia"><img class="infiniti-escuro" src="img/logo-infiniti-branca.png" alt="INFINITI Engenharia"><span>Residencial Polaris · 3 apartamentos</span></a>
     <nav aria-label="Seções">
-      <a href="#valor">Proposta</a><a href="#pagamento">Pagamento</a><a href="#planta">Planta</a><a href="#tresd">3D</a><a href="#apartamentos">Apartamentos</a><a href="#acabamentos">Acabamentos</a><a href="#escopo">Escopo</a><a href="#passeio">Passeio 3D</a>
+      <a href="#valor">Proposta</a><a href="#pagamento">Pagamento</a><a href="#planta">Planta</a><a href="#tresd">3D</a><a href="#apartamentos">Apartamentos</a><a href="#acabamentos">Acabamentos</a><a href="#escopo">Escopo</a><a href="#localizacao">Localização</a><a href="#passeio">Passeio 3D</a>
     </nav>
   </div>
 </header>
@@ -455,6 +462,24 @@ footer .miolo > span { min-width: 0; max-width: 62ch; }
     </ul>
     <h3>Condições gerais</h3>
     <p class="memorial">O aceite desta proposta não substitui o Contrato de Compra e Venda, que será firmado entre as partes e prevalecerá em caso de divergência. Projetos e documentação da obra são contratados à parte, fora deste orçamento. O detalhamento dos acabamentos será apresentado no Memorial Descritivo da obra.</p>
+  </div>
+</section>
+
+<section class="guia" id="localizacao">
+  <div class="miolo">
+    <p class="rotulo">Localização</p>
+    <h2>O terreno na R. Castro Alves, em Ariquemes-RO</h2>
+    <div class="local">
+      <div class="local-fotos">
+        <figure class="prancha"><img loading="lazy" src="img/localizacao.jpg" alt="Imagem de satélite da quadra na R. Castro Alves, com o terreno de 10 × 20 m do Residencial Polaris contornado em dourado, a seta do norte e a escala de 20 m" data-legenda="Imagem de satélite · terreno de 10 × 20 m em destaque"><figcaption>Imagem de satélite com o terreno de 10 × 20 m em destaque. Posição aproximada.</figcaption></figure>
+      </div>
+      <div class="lado">
+        <p>O Residencial Polaris ocupa a frente de um terreno na R. Castro Alves, rua asfaltada com calçadas largas dos dois lados, em uma quadra residencial de casas térreas.</p>
+        <p>A fachada fica voltada para o oeste, para a rua. O corredor de veículos corre junto à divisa sul do terreno.</p>
+        <p>No passeio 3D, o entorno aparece no chão a partir desta mesma imagem, com a rua e as calçadas nas medidas reais.</p>
+        <a class="botao" href="https://www.google.com/maps/search/?api=1&amp;query=-9.895457,-63.029921" target="_blank" rel="noopener">Ver no Google Maps</a>
+      </div>
+    </div>
   </div>
 </section>
 
